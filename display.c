@@ -18,7 +18,7 @@ display(){
 
 }
 
-choos_menu(){
+choose_menu(){
     char menu;
 
     while(1){

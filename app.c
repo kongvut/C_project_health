@@ -14,9 +14,9 @@ app(){
     choose = getch();
     if(choose == '0'){
         system("cls");
-        choos_menu();
+        choose_menu();
     }
     /*else if(choose == '1'){
-        choos_menu();
+        choose_menu();
     }*/
 }

@@ -5,6 +5,6 @@
 #include "login.c"
 
 main(){
-    choos_menu();
+    choose_menu();
 
 }
