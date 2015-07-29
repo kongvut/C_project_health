@@ -23,4 +23,7 @@ signup(){
     scanf("%f", &weight);
 
     printf("%s", user);
+    system("cls");
+    login();
+
 }
