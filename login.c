@@ -4,10 +4,11 @@
 login(){
     char menu;
     char user[100], pass[100];
-    printf("\n                               LOG IN \n");
-    printf("                         Username : ");
+    printf("\n\t\t\t\tLOG IN \n");
+    printf("\n\t\t***************************************\n\n");
+    printf("\t\tUsername : ");
     scanf("%s", user);
-    printf("                         Password : ");
+    printf("\t\tPassword : ");
     scanf("%s", pass);
     float user_age = 18;
     welcome();
@@ -18,11 +19,11 @@ login(){
     }
 }
 welcome(){
-    printf("\n            * * * * * * * * * * * * * * * * * * * * * * * *\n");
-    printf("            *                                             *\n");
-    printf("            *       !! W E L C O M E   B A C K !!         *\n");
-    printf("            *                                             *\n");
-    printf("            *                                             *\n");
-    printf("            *         PRESS ANY KEY TO CONTINUE. . .      *\n");
-    printf("            * * * * * * * * * * * * * * * * * * * * * * * *\n");
+    printf("\n\t    * * * * * * * * * * * * * * * * * * * * * * * *\n");
+    printf("\t    *                                             *\n");
+    printf("\t    *             !! W E L C O M E !!             *\n");
+    printf("\t    *                                             *\n");
+    printf("\t    *                                             *\n");
+    printf("\t    *         PRESS ANY KEY TO CONTINUE. . .      *\n");
+    printf("\t    * * * * * * * * * * * * * * * * * * * * * * * *\n");
 }

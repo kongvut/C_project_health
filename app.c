@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "app1.c"
 #include "app2.c"
 
 app(float user_age){
@@ -16,7 +17,12 @@ app(float user_age){
         system("cls");
         choose_menu();
     }
+    else if(choose == '1'){
+        system("cls");
+        app1(user_age);
+    }
     else if(choose == '2'){
+        system("cls");
         app2(user_age);
     }
 }
