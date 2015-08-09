@@ -26,19 +26,19 @@ app2(float user_age){
         printf("\t\t    Example Duration : 20-40 min,104-114 bpm\n");
     }
     else if(zone == '2'){
-        printf("\n\t\t    Light Zone (60-70%) \n");
+        printf("\n\t\t    Light Zone (61-70%) \n", '%');
         printf("\t\t    Example Duration : 40-80 min,114-133 bpm\n");
     }
     else if(zone == '3'){
-        printf("\n\t\t    Moderate Zone (70-80%) \n");
+        printf("\n\t\t    Moderate Zone (71-80%) \n", '%');
         printf("\t\t    Example Duration : 10-40 min,133-152 bpm\n");
     }
     else if(zone == '4'){
-        printf("\n\t\t    Hard Zone (80-90%) \n");
+        printf("\n\t\t    Hard Zone (81-90%) \n", '%');
         printf("\t\t    Example Duration : 2-10 min,152-171 bpm\n");
     }
     else if(zone == '5'){
-        printf("\n\t\t    Very Hard Zone (90-100%) \n");
+        printf("\n\t\t    Very Hard Zone (91-100%) \n", '%');
         printf("\t\t    Example Duration : 5 min,171-190 bpm\n");
     }
 
