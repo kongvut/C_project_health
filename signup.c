@@ -16,12 +16,14 @@ signup(){
     scanf("%s", name);
     printf("\t\tGender (male = 1, female = 2) : ");
     scanf("%d", &sex);
+    /*
     printf("\t\tAge : ");
     scanf("%d", &age);
     printf("\t\tHeight (cm) : ");
     scanf("%f", &height);
     printf("\t\tWeight (Kg) : ");
     scanf("%f", &weight);
+    */
     printf("\n\t\t***************************************");
     printf("\n\t\t\tPress 1 To confirm");
     printf("\n\t\t\tPress 0 To clear\n");
