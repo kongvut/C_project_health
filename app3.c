@@ -1,32 +1,46 @@
 #include <stdio.h>
 
+extern char g_sex, g_user[100], *time_now();
+
 app3(){
-    char ex;
-    int gender, age, weight, height;
+    char ex, gender, path[100];
+    int age, weight, height;
     float BMR, bx;
+    FILE *fp;
         printf("\n\n\t\t* * * * * * * * * * * * * * * * * * *\n");
     printf("\t\t*                                   *\n");
     printf("\t\t*       CALORIES CALCULATOR         *\n");
     printf("\t\t*                                   *\n");
     printf("\t\t* * * * * * * * * * * * * * * * * * *\n");
 
-    printf("\n\t\tInput Your Gender (male=1,female=2) :  ");
-    scanf("%d", &gender);
-    printf("\t\tInput Your Age :  ");
+    printf("\n\t\tYour Gender %s", (g_sex == '1' ? "Male" : "Female"));
+    //scanf("%d", &gender);
+    gender = g_sex;
+
+    printf("\n\t\tInput Your Age :  ");
     scanf("%d", &age);
     printf("\t\tInput Your Weight(Kg) :  ");
     scanf("%d", &weight);
     printf("\t\tInput Your Height(cm) :  ");
     scanf("%d", &height);
 
-    if(gender=1){
+    //save calculate
+    strcpy(path,"db/app/");
+    strcat(path, g_user);
+    strcat(path, "_app3.db");
+    fp = fopen(path,"a");
+
+    if(gender=='1'){
         BMR = 66+(13.7*weight)+(5*height)-(6.8*age);
         printf("\n\t\tYour BMR is %.2f kilocalories\n", BMR);
     }
-    else if(gender=2){
+    else if(gender=='2'){
         BMR = (66)+(9.6*weight)+(1.8*height)-(4.7*age);
         printf("\n\t\tYour BMR is %.2f kilocalories\n", BMR);
     }
+    //save calculate
+    fprintf(fp,"\n\t\tYour BMR is %.2f kilocalories\n", BMR);
+
     printf("\n\t\t**Choose Your Activities Level**\n");
     printf("\t\tNo exercise                             PRESS 1\n");
     printf("\t\tLow exercise    [1-3 times a week]      PRESS 2\n");
@@ -56,4 +70,10 @@ app3(){
         printf("\n\t\tYour bx is %.2f kilocalories", bx);
     }
 
+    //save calculate
+    fprintf(fp,"\n\t\tYour bx is %.2f kilocalories", bx);
+    //save calculate
+    fprintf(fp,"\n\t\tCalculate on : %s", time_now());
+    fprintf(fp,"\n\t\t* * * * * * * * * * * * * * * * * * *");
+    fclose(fp);
 }
