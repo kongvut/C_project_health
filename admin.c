@@ -29,8 +29,10 @@ int main(void)
   gets(user);
   printf("\t\tPassword : ");
   gets(pass);
+  //concate
+  strcat(user, pass);
 
-  if(strcmp(strcat(user, pass), "admin123")==0){
+  if(strcmp(user, "admin123")==0){
     listmember :
     system("cls");
     printf("\n\t\tMember List\n");
