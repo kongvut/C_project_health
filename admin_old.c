@@ -15,7 +15,7 @@ char *remove_ext(char* mystr) {
     return retstr;
 }
 
-admin()
+int main(void)
 {
   DIR           *d;
   struct dirent *dir;
@@ -29,8 +29,10 @@ admin()
   gets(user);
   printf("\t\tPassword : ");
   gets(pass);
+  //concate
+  strcat(user, pass);
 
-  if(strcmp(strcat(user, pass), "admin123")==0){
+  if(strcmp(user, "admin123")==0){
     listmember :
     system("cls");
     printf("\n\t\tMember List\n");
@@ -114,6 +116,8 @@ admin()
     if(menu == '1'){
         fflush(stdin);
         goto listmember;
+    }else{
+        exit(0);
     }
 
   }else{
@@ -123,5 +127,7 @@ admin()
         goto login;
   }
 
+  return(0);
 }
+
 

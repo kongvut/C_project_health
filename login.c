@@ -13,16 +13,16 @@ login(){
     n=0;
     strcpy(path,"db/pass/");
 
-    printf("\n\t\t\t\tLOG IN \n");
-    printf("\n\t\t***************************************\n\n");
-    printf("\t\tUsername : ");
+    printf("\n\t\t\t\t    LOG IN \n");
+    printf("\n\t\t    ***************************************\n\n");
+    printf("\t\t    Username : ");
     gets(user);
     //user = aa
     strcpy(userfile, user);
     //keep global value
     strcpy(g_user, user);
 
-    printf("\t\tPassword : ");
+    printf("\t\t    Password : ");
     gets(pass);
     //pass = 123
     strcat(user,pass);
@@ -39,8 +39,8 @@ login(){
 		//printf("Open file Error\a");
 		//return(101);
 
-		printf("\n\t\t\tCan't login try again \n");
-        printf("\n\t\t***************************************\n\n");
+		printf("\n\t\t\t    Can't login try again \n");
+        printf("\n\t\t    ***************************************\n\n");
         goto login;
     }
 
@@ -86,17 +86,17 @@ login(){
             app();
         }
     }else{
-        printf("\n\t\t\tCan't login try again \n");
-        printf("\n\t\t***************************************\n\n");
+        printf("\n\t\t\t    Can't login try again \n");
+        printf("\n\t\t    ***************************************\n\n");
         goto login;
     }
 }
 welcome(){
-    printf("\n\t    * * * * * * * * * * * * * * * * * * * * * * * *\n");
-    printf("\t    *                                             *\n");
-    printf("\t    *             !! W E L C O M E !!             *\n");
-    printf("\t    *                                             *\n");
-    printf("\t    *                                             *\n");
-    printf("\t    *         PRESS ANY KEY TO CONTINUE. . .      *\n");
-    printf("\t    * * * * * * * * * * * * * * * * * * * * * * * *\n");
+    printf("\n\t\t * * * * * * * * * * * * * * * * * * * * * * * *\n");
+    printf("\t\t *                                             *\n");
+    printf("\t\t *             !! W E L C O M E !!             *\n");
+    printf("\t\t *                                             *\n");
+    printf("\t\t *                                             *\n");
+    printf("\t\t *         PRESS ANY KEY TO CONTINUE. . .      *\n");
+    printf("\t\t * * * * * * * * * * * * * * * * * * * * * * * *\n");
 }

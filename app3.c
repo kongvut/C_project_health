@@ -40,8 +40,8 @@ app3(){
     }
     //save calculate
     fprintf(fp,"\n\t\tYour BMR is %.2f kilocalories\n", BMR);
-
-    printf("\n\t\t**Choose Your Activities Level**\n");
+    printf("\n\n\t\t>>Your Total Daily Energy Expenditure<<");
+    printf("\n\n\t\t  **Choose Your Activities Level**\n");
     printf("\t\tNo exercise                             PRESS 1\n");
     printf("\t\tLow exercise    [1-3 times a week]      PRESS 2\n");
     printf("\t\tNormal exercise [3-5 times a week]      PRESS 3\n");
@@ -51,27 +51,27 @@ app3(){
 
     if(ex == '1'){
         bx = BMR*1.2;
-        printf("\n\t\tYour bx is %.2f kilocalories", bx);
+        printf("\n\t\tYour TDEE is %.2f kilocalories", bx);
     }
     else if(ex == '2'){
         bx = BMR*1.375;
-        printf("\n\t\tYour bx is %.2f kilocalories", bx);
+        printf("\n\t\tYour TDEE is %.2f kilocalories", bx);
     }
     else if(ex == '3'){
         bx = BMR*1.55;
-        printf("\n\t\tYour bx is %.2f kilocalories", bx);
+        printf("\n\t\tYour TDEE is %.2f kilocalories", bx);
     }
     else if(ex == '4'){
         bx = BMR*1.725;
-        printf("\n\t\tYour bx is %.2f kilocalories", bx);
+        printf("\n\t\tYour TDEE is %.2f kilocalories", bx);
     }
     else if(ex == '5'){
         bx = BMR*1.9;
-        printf("\n\t\tYour bx is %.2f kilocalories", bx);
+        printf("\n\t\tYour TDEE is %.2f kilocalories", bx);
     }
 
     //save calculate
-    fprintf(fp,"\n\t\tYour bx is %.2f kilocalories", bx);
+    fprintf(fp,"\n\t\tYour TDEE is %.2f kilocalories", bx);
     //save calculate
     fprintf(fp,"\n\t\tCalculate on : %s", time_now());
     fprintf(fp,"\n\t\t* * * * * * * * * * * * * * * * * * *");
